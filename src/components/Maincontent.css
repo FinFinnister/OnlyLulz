@@ -1,0 +1,38 @@
+/* Add a container to wrap the boxes */
+.box-container {
+    display: flex;
+    justify-content: space-between; /* Space the boxes out horizontally */
+    gap: 20px; /* Space between the boxes */
+    margin-top: 20px;
+  }
+  
+  /* Style for individual boxes */
+  .box {
+    width: 30%; /* Each box takes up 30% of the width */
+    background-color: #333; /* Dark gray background */
+    border: 2px solid #ff8c00; /* Orange trim */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the title inside the box */
+  .box h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #ff8c00; /* Orange color for titles */
+  }
+  
+  /* Styling for the box content */
+  .box p, .box ul {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* Style for unordered list in the rules and mods sections */
+  .box ul {
+    padding-left: 20px;
+  }
+  

@@ -1,0 +1,56 @@
+.Menubar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ff8c00; /* Orange background for the menu */
+    padding: 10px 0;
+  }
+  
+  .main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .auth-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative; /* So we can position the "Live!" button inside it */
+  }
+  
+  /* Auth buttons (Login/Register) */
+  .auth-menu button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .auth-menu button:hover {
+    background-color: #cc7a00;
+  }
+  
+  /* Live! button in red, bold, positioned far left */
+  .live-button {
+    position: absolute; /* Absolutely positioned inside the auth-menu */
+    left: 10px; /* Positioned to the far left */
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .live-button:hover {
+    color: #cc7a00;
+  }
+  
